@@ -14,7 +14,7 @@
     shell:SystemTray.IsVisible="True">
 
     <!--LayoutRoot is the root grid where all page content is placed-->
-    <Grid x:Name="LayoutRoot" Background="Transparent">
+    <Grid x:Name="LayoutRoot" Background="Transparent" Loaded="PhoneApplicationPage_Loaded">
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
@@ -28,11 +28,11 @@
 
         <!--ContentPanel - place additional content here-->
         <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,0,0" HorizontalAlignment="Left" Width="458">
-            <ListBox x:Name="listaGrupos" SelectionChanged="listaGrupos_SelectionChanged">
+            <ListBox x:Name="listaGrupos">
                 <ListBox.ItemTemplate>
                     <DataTemplate>
                         <StackPanel Orientation="Horizontal" Background="ForestGreen" Width="420" Height="Auto">
-                            <TextBlock x:Name="txtGrupo" Text="Testeee" Width="Auto" FontSize="40" />
+                            <TextBlock x:Name="txtGrupo" Text="{Binding RootObject.Grupo}" Width="Auto" FontSize="40" />
                         </StackPanel>
                     </DataTemplate>
                 </ListBox.ItemTemplate>

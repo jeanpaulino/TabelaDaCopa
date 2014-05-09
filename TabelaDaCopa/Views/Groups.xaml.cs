@@ -25,7 +25,6 @@ namespace TabelaDaCopa.Views
 
             pi.IsVisible = false;
 
-
         }
 
         public async void PhoneApplicationPage_Loaded(object sender, RoutedEventArgs e)
