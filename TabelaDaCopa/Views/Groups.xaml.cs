@@ -57,5 +57,10 @@ namespace TabelaDaCopa.Views
                 MessageBox.Show("Parece que você não está conectado!\nPor favor, conecte-se usando a rede de dados do celular ou uma rede wi-fi...", "Oooops...", MessageBoxButton.OK);
             }
         }
+
+        private void listaGrupos_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
     }
 }
