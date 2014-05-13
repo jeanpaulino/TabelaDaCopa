@@ -27,3 +27,8 @@ Z:\windows\TabelaDaCopa\TabelaDaCopa\Bin\Debug\System.Net.Http.Primitives.xml
 Z:\windows\TabelaDaCopa\TabelaDaCopa\obj\Debug\TabelaDaCopa.csprojResolveAssemblyReference.cache
 Z:\windows\TabelaDaCopa\TabelaDaCopa\Bin\Debug\Newtonsoft.Json.dll
 Z:\windows\TabelaDaCopa\TabelaDaCopa\Bin\Debug\Newtonsoft.Json.xml
+Z:\Projetos\TabelaDaCopa\TabelaDaCopa\obj\Debug\TabelaDaCopa.csprojResolveAssemblyReference.cache
+Z:\Projetos\TabelaDaCopa\TabelaDaCopa\obj\Debug\App.g.cs
+Z:\Projetos\TabelaDaCopa\TabelaDaCopa\obj\Debug\MainPage.g.cs
+Z:\Projetos\TabelaDaCopa\TabelaDaCopa\obj\Debug\TabelaDaCopa.dll
+Z:\Projetos\TabelaDaCopa\TabelaDaCopa\obj\Debug\TabelaDaCopa.pdb

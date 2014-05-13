@@ -13,7 +13,7 @@ namespace TabelaDaCopa.Controllers
     public class RequestHttp
     {
 
-        public static async Task<List<Groups>> GetGrupos( Uri webServiceBaseAddress, string webServiceToken )
+        public static async Task<List<RootObject>> GetGrupos(Uri webServiceBaseAddress, string webServiceToken)
         {
             try
             {
@@ -28,7 +28,7 @@ namespace TabelaDaCopa.Controllers
 
                 var result = await response.Content.ReadAsStringAsync();
 
-                var groups = await JsonConvert.DeserializeObjectAsync<List<Groups>>(result);
+                var groups = await JsonConvert.DeserializeObjectAsync<List<RootObject>>(result);
 
                 return groups;
             }
