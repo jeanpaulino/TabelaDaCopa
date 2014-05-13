@@ -32,11 +32,16 @@
                 <ListBox.ItemTemplate>
                     <DataTemplate>
                         <StackPanel Orientation="Horizontal" Background="ForestGreen" Width="420" Height="Auto">
-<<<<<<< HEAD
-                            <TextBlock x:Name="txtGrupo" Text="{Binding RootObject.Grupo}" Width="Auto" FontSize="40" />
-=======
                             <TextBlock x:Name="txtGrupo" Text="{Binding Grupo}" Width="Auto" FontSize="40" />
->>>>>>> f2d7dc74d28ab62df39ed91137dd9654e937924e
+                            <ListBox ItemsSource="{Binding Classificacao}">
+                                <ListBox.ItemTemplate>
+                                    <DataTemplate>
+                                        <StackPanel Orientation="Horizontal" Background="Gray" Width="420" Height="Auto">
+                                            <TextBlock x:Name="txtSelecao" Text="{Binding Selecao.Nome}" Width="Auto" FontSize="40" />
+                                        </StackPanel>
+                                    </DataTemplate>
+                                </ListBox.ItemTemplate>
+                            </ListBox>
                         </StackPanel>
                     </DataTemplate>
                 </ListBox.ItemTemplate>

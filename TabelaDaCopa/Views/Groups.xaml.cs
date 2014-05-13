@@ -61,5 +61,10 @@ namespace TabelaDaCopa.Views
         {
 
         }
+
+        private void listaSelecao_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
     }
 }
