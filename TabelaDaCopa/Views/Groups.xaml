@@ -22,8 +22,8 @@
 
         <!--TitlePanel contains the name of the application and page title-->
         <StackPanel Grid.Row="0" Margin="12,17,0,28">
-            <TextBlock Text="TABELA DA COPA 2014" Style="{StaticResource PhoneTextNormalStyle}"/>
-            <TextBlock Text="CLASSIFICAÇÕES" Margin="9,-7,0,0" Style="{StaticResource PhoneTextTitle1Style}" FontSize="60"/>
+            <TextBlock Text="COPA DO MUNDO 2014" Style="{StaticResource PhoneTextNormalStyle}"/>
+            <TextBlock Text="CLASSIFICAÇÃO" Margin="9,-7,0,0" Style="{StaticResource PhoneTextTitle1Style}" FontSize="60"/>
         </StackPanel>
 
         <!--ContentPanel - place additional content here-->
@@ -31,13 +31,26 @@
             <ListBox x:Name="listaGrupos">
                 <ListBox.ItemTemplate>
                     <DataTemplate>
-                        <StackPanel Orientation="Horizontal" Background="ForestGreen" Width="420" Height="Auto">
-                            <TextBlock x:Name="txtGrupo" Text="{Binding Grupo}" Width="Auto" FontSize="40" />
+                        <StackPanel Orientation="Vertical" Width="450" Height="Auto" Margin="0,0,0,15">
+                            <StackPanel Orientation="Horizontal" Background="ForestGreen">
+                                <TextBlock x:Name="txtGrupo" Text="{Binding Grupo}" Width="240" FontSize="35" VerticalAlignment="Center" Margin="10,0,0,0" />
+                                <TextBlock x:Name="txtJogos" Text="J" Width="40" FontSize="25" VerticalAlignment="Center" />
+                                <TextBlock x:Name="txtVitorias" Text="V" Width="40" FontSize="25" VerticalAlignment="Center" />
+                                <TextBlock x:Name="txtEmpates" Text="E" Width="40" FontSize="25" VerticalAlignment="Center" />
+                                <TextBlock x:Name="txtDerrotas" Text="D" Width="40" FontSize="25" VerticalAlignment="Center" />
+                                <TextBlock x:Name="txtPontos" Text="Pts" Width="50" FontSize="25" VerticalAlignment="Center" />
+                            </StackPanel>
+
                             <ListBox ItemsSource="{Binding Classificacao}">
                                 <ListBox.ItemTemplate>
                                     <DataTemplate>
-                                        <StackPanel Orientation="Horizontal" Background="Gray" Width="420" Height="Auto">
-                                            <TextBlock x:Name="txtSelecao" Text="{Binding Selecao.Nome}" Width="Auto" FontSize="40" />
+                                        <StackPanel Orientation="Horizontal" Background="Transparent" Width="Auto" Height="50">
+                                            <TextBlock x:Name="txtSelecao" Text="{Binding Selecao.Nome}" Width="240" FontSize="25" VerticalAlignment="Center" Margin="10,0,0,0" />
+                                            <TextBlock x:Name="txtJogos" Text="{Binding Jogos}" Width="40" FontSize="25" VerticalAlignment="Center" />
+                                            <TextBlock x:Name="txtVitorias" Text="{Binding Vitorias}" Width="40" FontSize="25" VerticalAlignment="Center" />
+                                            <TextBlock x:Name="txtEmpates" Text="{Binding Empates}" Width="40" FontSize="25" VerticalAlignment="Center" />
+                                            <TextBlock x:Name="txtDerrotas" Text="{Binding Derrotas}" Width="40" FontSize="25" VerticalAlignment="Center" />
+                                            <TextBlock x:Name="txtPontos" Text="{Binding PontosGanhos}" Width="50" FontSize="25" VerticalAlignment="Center" />
                                         </StackPanel>
                                     </DataTemplate>
                                 </ListBox.ItemTemplate>
@@ -46,7 +59,7 @@
                     </DataTemplate>
                 </ListBox.ItemTemplate>
             </ListBox>
-            
+
         </Grid>
     </Grid>
 
